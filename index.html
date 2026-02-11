@@ -16,10 +16,453 @@
     height: 500px;
     border: 1px dashed;
   }
+  
+/*  rgb(255, 94, 7)  */
+  
+  .coffee-maker-lid {
+    background: radial-gradient(circle at 40% 10%, rgb(255, 165, 92), rgb(255, 115, 0));
+    border-radius: 120px / 50px 50px 20px 20px;
+    width: 118px;
+    height: 30px;
+    position: absolute;
+    left: 71px;
+    top: 150px;
+  }
+  
+  .coffee-maker-lid::before {
+    display: block;
+    content: "";
+    background: linear-gradient(to top, black, 80%, rgb(186, 186, 186));
+    height: 15px;
+    width: 15px;
+    left: 53;
+    top: -5;
+    position: absolute;
+  }
+  
+  .coffee-maker {
+    border-top: 110px solid rgb(255, 69, 0);
+    width: 120px;
+    position: absolute;
+    left: 70px;
+    top: 150px;
+    border-radius: 120px / 50px 50px 20px 20px;
+    border-right: 8px solid transparent;
+    border-left: 8px solid transparent;
+  }
+  
+  .coffee-maker::before {
+    position: absolute;
+    z-index: -1;
+    content: "";
+    display: block;
+    width: 100px;
+    height: 25px;
+    border-radius: 120px / 0px 0px 20px 20px;
+    background: linear-gradient(to bottom, rgb(186, 39, 0), rgb(255, 69, 0));
+    transform: translate(2px, -5px);
+  }
+  
+  .coffee-maker::after {
+    position: absolute;
+    z-index: -4;
+    content: "";
+    display: block;
+    width: 90px;
+    border-bottom: 100px solid rgb(190, 190, 190);
+    border-right: 20px solid transparent;
+    border-left: 20px solid transparent;
+    border-radius: 120px / 0px 0px 20px 20px;
+    translate: -13px -10px;
+  }
+  
+  .handles {
+    position: absolute;
+    z-index: -5;
+    left: 180px;
+    top: 180px;
+    width: 30px;
+    height: 90px;
+    border: 17px solid black;
+    border-left: 0;
+    border-bottom: 0;
+    border-top-right-radius: 20px;
+  }
+  
+  .coffee-cans {
+    position: absolute;
+    top: 210px;
+    left: 290px;
+    width: 120px;
+    height: 150px;
+    background: linear-gradient(to right, gold, 55%, rgb(255, 250, 40));
+    z-index: -1;
+    border-radius: 0px 0px 150px 150px / 150px 120px 26px 26px;
+  }
+  
+  .coffee-can-container {
+    position: absolute;
+    top: 210px;
+    left: 290px;
+    width: 120px;
+    height: 150px;
+    z-index: 0;
+    background: transparent;
+    overflow: hidden;
+  }
+  
+  .coffee-can-container2 {
+    position: absolute;
+    top: 190px;
+    left: 240px;
+    width: 120px;
+    height: 150px;
+    z-index: -2;
+    background: transparent;
+    overflow: hidden;
+  }
+  
+  .coffee-cans::before{
+    overflow: hidden;
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: 5;
+    bottom: 0;
+    left: 0;
+    width: 120px;
+    height: 50px;
+    background: linear-gradient(to right, rgb(232, 0, 0), rgb(255, 42, 42));
+    border-radius: 0px 0px 150px 150px / 150px 120px 26px 26px;
+  }
+  
+  .coffee-cans::after {
+    overflow: hidden;
+    position: absolute;
+    top: -7;
+    left: 0;
+    display: block;
+    content: "";
+    width: 120px; 
+    height: 17px; 
+    background-color: yellow;
+    border-radius: 100% 100%;
+  }
+  
+  .coffee-can2 {
+    position: absolute;
+    align-content: center;
+    top: 190px;
+    left: 240px;
+    width: 120px;
+    height: 150px;
+    background: linear-gradient(to bottom, gold, rgb(240, 156, 0));
+    z-index: -2;
+    border-radius: 0px 0px 150px 150px / 150px 120px 26px 26px;
+  }
+  
+  .coffee-can2::after{
+    overflow: hidden;
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: 5;
+    bottom: 0;
+    left: 0;
+    width: 120px;
+    height: 50px;
+    background: rgb(186, 0, 14);
+    border-radius: 0px 0px 150px 150px / 150px 120px 26px 26px;
+  }
+  
+  .coffee-can2::before {
+    overflow: hidden;
+    position: absolute;
+    top: -7;
+    left: 0;
+    display: block;
+    content: "";
+    width: 120px; 
+    height: 17px; 
+    background-color: yellow;
+    border-radius: 100% 100%;
+  }
+  
+  .coffee-can-text {
+    font-family: sans-serif;
+    font-size: 18pt;
+    letter-spacing: -1;
+    translate: -20px 5px;
+    font-weight: bolder;
+  }
+  
+  .coffee-can-small-text {
+    font-family: sans-serif;
+    font-size: 8pt;
+    color: white;
+    letter-spacing: -1;
+    translate: -40px 5px;
+    font-weight: normal;
+  }
+  
+  .mugs {
+    position: absolute;
+    top: 300px;
+    left: 200px;
+    width: 70px;
+    height: 60px;
+    background: linear-gradient(to left, rgb(255, 225, 199), white);
+    border: solid black 1px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    overflow: hidden;
+  }
+  
+  .mugs-handle {
+    z-index: -1;
+    position: absolute;
+    display: block;
+    content: "";
+    width: 40px;
+    height: 50px;
+    top: 303px;
+    left: 180px;
+    background: linear-gradient(to left, rgb(255, 225, 199), white);
+    border: solid black 1px;
+    border-radius: 95% / 100%;
+  }
+  
+  .mugs-handle::before {
+    display: block;
+    content: "";
+    width: 20px;
+    height: 30px;
+    translate: 10px 8px;
+    background: white;
+    border: solid black 1px;
+    border-radius: 95% / 100%
+  }
+  
+  .mug-stripes {
+    position: relative;
+    z-index: 2;
+    left: 0;
+    width: 80px;
+    height: 10px;
+    background: linear-gradient(to right, blue, rgb(61, 39, 184));
+  }
+  
+  .mug-stripes::before {
+    position: absolute;
+    content: "";
+    display: block;
+    z-index: 2;
+    width: 80px;
+    height: 10px;
+    transform: translateY(20px);
+    background: linear-gradient(to right, blue, rgb(61, 39, 184));
+  }
+  
+    .mug-stripes::after {
+    position: absolute;
+    content: "";
+    display: block;
+    z-index: 2;
+    width: 80px;
+    height: 10px;
+    transform: translateY(40px);
+    background: linear-gradient(to right, blue, rgb(61, 39, 184));
+  }
+  
+  .mug2 {
+    position: absolute;
+    top: 245px;
+    left: 198px;
+    width: 70px;
+    height: 60px;
+    rotate: -8deg;
+    background: linear-gradient(to left top, rgb(191, 133, 88), 25%, rgb(245, 199, 164), 45%, white);
+    border: solid black 1px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    overflow: hidden;
+  }
+  
+  .mugs-handle2 {
+    z-index: -1;
+    position: absolute;
+    display: block;
+    content: "";
+    width: 40px;
+    height: 50px;
+    rotate: -8deg;
+    top: 250px;
+    left: 180px;
+    background: linear-gradient(to left, rgb(255, 225, 199), white);
+    border: solid black 1px;
+    border-radius: 95% / 100%;
+  }
+  
+  .mugs-handle2::before {
+    display: block;
+    content: "";
+    width: 20px;
+    height: 30px;
+    translate: 10px 8px;
+    background: white;
+    border: solid black 1px;
+    border-radius: 95% / 100%
+  }
+  
+  .mug-stripes2 {
+    position: relative;
+    z-index: 2;
+    left: 0;
+    width: 80px;
+    height: 10px;
+    background: linear-gradient(to right, blue, rgb(61, 39, 184));
+  }
+  
+  .mug-stripes2::before {
+    position: absolute;
+    content: "";
+    display: block;
+    z-index: 2;
+    width: 80px;
+    height: 10px;
+    transform: translateY(20px);
+    background: linear-gradient(to right, blue, rgb(61, 39, 184));
+  }
+  
+    .mug-stripes2::after {
+    position: absolute;
+    content: "";
+    display: block;
+    z-index: 2;
+    width: 80px;
+    height: 10px;
+    transform: translateY(40px);
+    background: linear-gradient(to right, blue, rgb(61, 39, 184));
+  }
+  
+  .mugs3 {
+    z-index: 2;
+    position: absolute;
+    top: 155px;
+    left: 330px;
+    width: 70px;
+    height: 60px;
+    background: linear-gradient(to top, rgb(92, 43, 0), 3%, rgb(255, 225, 199), 15%, white);
+    border: solid black 1px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    overflow: hidden;
+  }
+  
+  .mugs3::after {
+    display: block;
+    content: "";
+    position: absolute;
+    z-index: 5;
+    width: 0; 
+    height: 0; 
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-left: 20px solid red;
+    top: 5;
+    
+  }
+  
+  .mugs-handle3 {
+    z-index: 0;
+    position: absolute;
+    display: block;
+    content: "";
+    width: 40px;
+    height: 50px;
+    top: 157px;
+    left: 312px;
+    background: linear-gradient(to top, rgb(255, 225, 199), white);
+    border: solid black 1px;
+    border-radius: 95% / 100%;
+  }
+  
+  .mugs-handle3::before {
+    display: block;
+    content: "";
+    width: 20px;
+    height: 30px;
+    translate: 10px 8px;
+    background: white;
+    border: solid black 1px;
+    border-radius: 95% / 100%
+  }
+  
+  .mug-stripes3 {
+    position: relative;
+    z-index: 2;
+    left: 0;
+    width: 80px;
+    height: 10px;
+    background: linear-gradient(to right, blue, rgb(61, 39, 184));
+  }
+  
+  .mug-stripes3::before {
+    position: absolute;
+    content: "";
+    display: block;
+    z-index: 2;
+    width: 80px;
+    height: 10px;
+    transform: translateY(20px);
+    background: linear-gradient(to right, blue, rgb(61, 39, 184));
+  }
+  
+    .mug-stripes3::after {
+    position: absolute;
+    content: "";
+    display: block;
+    z-index: 2;
+    width: 80px;
+    height: 10px;
+    transform: translateY(40px);
+    background: linear-gradient(to right, blue, rgb(61, 39, 184));
+  }
 
 </style>
 
 
 <div class="frame">
-  <!-- add your elements here -->
+  <div class="mugs">
+    <div class="mug-stripes"></div>
+  </div>
+  <div class="mugs-handle"></div>
+  
+  <div class="mug2">
+    <div class="mug-stripes2"></div>
+  </div>
+  <div class="mugs-handle2"></div>
+  
+  <div class="mugs3">
+    <div class="mug-stripes3"></div>
+  </div>
+  <div class="mugs-handle3"></div>
+  
+  <div class="coffee-maker"></div>
+  <div class="coffee-maker-lid"></div>
+  <div class="handles"></div>
+  
+  <div class="coffee-cans">  </div>
+  <div class="coffee-can-container">
+      <p class="coffee-can-text">CAFE CUSTELO</p>
+    <p class="coffee-can-small-text">
+      PURO Y PLENO DE SABOR,
+       COMO NINGUN OTRO
+    </p>
+  </div>
+  
+  <div class="coffee-can2"></div>
+  <div class="coffee-can-container2">
+      <p class="coffee-can-text">CAFE CUSTELO</p>
+  </div>
 </div>
